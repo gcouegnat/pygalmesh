@@ -2,7 +2,9 @@
 #define GENERATE_2D_HPP
 
 #include <memory>
+#if !(defined _WIN32 || defined _WIN64)
 #include <pthread.h>
+#endif
 #include <vector>
 
 namespace pygalmesh {
